@@ -44,7 +44,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp1"
+                android:onClick="addThreeForTeamA"
                 android:text="+3 points" />
 
             <Button
@@ -53,7 +53,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp2"
+                android:onClick="addTwoForTeamA"
                 android:text="+2 points" />
 
             <Button
@@ -61,12 +61,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp3"
+                android:onClick="addOneForTeamA"
                 android:text="Free Throw" />
 
         </LinearLayout>
 
-        <View
+        <TextView
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray" />
@@ -107,7 +107,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp4"
+                android:onClick="addThreeForTeamB"
                 android:text="+3 points" />
 
             <Button
@@ -116,7 +116,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp5"
+                android:onClick="addTwoForTeamB"
                 android:text="+2 points" />
 
             <Button
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreUp6"
+                android:onClick="addOneForTeamB"
                 android:text="Free Throw" />
 
 
@@ -143,4 +143,3 @@
         android:text="Reset" />
 
 </RelativeLayout>
-

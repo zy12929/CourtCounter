@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0;
-    int score2 = 0;
+    int scoreA = 0;
+    int scoreB = 0;
 
 
 
@@ -21,19 +21,19 @@ public class MainActivity extends AppCompatActivity {
     /**
      * this method is called when the order button A is clicked
      */
-    public void scoreUp1(View view){
-        score = score +3;
-        displayForTeamA(score);
+    public void addThreeForTeamA(View v){
+        scoreA = scoreA +3;
+        displayForTeamA(scoreA);
     }
 
-    public void scoreUp2(View view){
-        score = score +2;
-        displayForTeamA(score);
+    public void addTwoForTeamA(View v){
+        scoreA = scoreA +2;
+        displayForTeamA(scoreA);
     }
 
-    public void scoreUp3(View view){
-        score = score +1;
-        displayForTeamA(score);
+    public void addOneForTeamA(View v){
+        scoreA = scoreA +1;
+        displayForTeamA(scoreA);
     }
 
 
@@ -41,26 +41,26 @@ public class MainActivity extends AppCompatActivity {
     /**
      * this method is called when the order button B is clicked
      */
-    public void scoreUp4(View view){
-        score2 = score2 +3;
-        displayForTeamB(score2);
+    public void addThreeForTeamB(View v){
+        scoreB = scoreB +3;
+        displayForTeamB(scoreB);
     }
 
-    public void scoreUp5(View view){
-        score2 = score2 +2;
-        displayForTeamB(score2);
+    public void addTwoForTeamB(View v){
+        scoreB = scoreB +2;
+        displayForTeamB(scoreB);
     }
 
-    public void scoreUp6(View view) {
-        score2 = score2 + 1;
-        displayForTeamB(score2);
+    public void addOneForTeamB(View v) {
+        scoreB = scoreB + 1;
+        displayForTeamB(scoreB);
     }
 
-    public void reset(View view){
-        score2 = 0;
-        score = 0;
-        displayForTeamA(score);
-        displayForTeamB(score2);
+    public void reset(View v){
+        scoreB = 0;
+        scoreA = 0;
+        displayForTeamA(scoreA);
+        displayForTeamB(scoreB);
     }
 
     /**
@@ -80,5 +80,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
